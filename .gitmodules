@@ -1,0 +1,9 @@
+[submodule "src/minuit"]
+	path = src/minuit
+	url = ../minuit.git
+[submodule "src/mud"]
+	path = src/mud
+	url = ../mud.git
+[submodule "src/lustre"]
+	path = src/lustre
+	url = ../lustre.git
