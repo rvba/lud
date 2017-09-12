@@ -5,6 +5,9 @@ sudo:
 addons:
         packages:
                 cmake
+
+install:
+        sudo apt install build-essential cmake libgl1-mesa-dev freeglut3-dev libjpeg62-dev libpng12-dev libxmu-dev libxi-dev 
 before_script:
         - mkdir build 
         - cd build
