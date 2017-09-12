@@ -1,14 +1,13 @@
 # LUD
+
 cmake_minimum_required(VERSION 2.8) 
 
-add_definitions(-std=gnu89)
+project(Lud)
 
 set(PATH_MINUIT_SRC ${CMAKE_SOURCE_DIR}/src/minuit)
 set(PATH_LUSTRE ${CMAKE_SOURCE_DIR}/src/lustre)
 set(PATH_MUD ${CMAKE_SOURCE_DIR}/src/mud)
 set(PATH_LUA ${CMAKE_SOURCE_DIR}/src/mud/lune/luajit/src)
-
-###############		 INCLUDES	#############################
 
 include_directories(
 	${PATH_MINUIT_SRC}
@@ -32,10 +31,7 @@ include_directories(
 	${PATH_LUA}
 	)
 
-project(Lud)
-
-option(OPT_LUA_STATIC "Lua Static Lib" ON)
-option(OPT_STUCCO_STATIC "Stucco static" ON)
+add_definitions(-std=gnu89)
 
 find_package(OpenGL REQUIRED)
 find_package(GLUT REQUIRED)
@@ -83,8 +79,6 @@ target_link_libraries(
 		readline #Lua
 		umber
 		)
-
-
 
 list(APPEND LINK_FLAGS m)
 list(APPEND LINK_FLAGS ${GLEW_LIBRARY})
