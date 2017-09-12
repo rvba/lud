@@ -1,6 +1,8 @@
 # Lud 
 
-Lud is a Lua 3D editor [![Build Status](https://travis-ci.org/rvba/lud.svg?branch=master)](https://travis-ci.org/rvba/lud)
+Lud is a Lua 3D editor 
+
+[![Build Status](https://travis-ci.org/rvba/lud.svg?branch=master)](https://travis-ci.org/rvba/lud)
 
 ![Lud](http://rvba.fr/lud.jpg)
 
