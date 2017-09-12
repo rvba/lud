@@ -95,18 +95,6 @@ t_block *lud_makemenu_debug( t_context *C)
 	return block;
 }
 
-/*
-void *op_window_a4( t_brick *brick)
-{
-	t_context *C = ctx_get();
-	C->app->window->width_def=210;
-	C->app->window->height_def=297;
-	app_gl_reshape(210,297);
-	return NULL;
-}
-*/
-
-
 // menu view
 
 t_block *lud_makemenu_view( t_context *C)

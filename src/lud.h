@@ -1,5 +1,5 @@
-#ifndef _GLINT_H_
-#define _GLINT_H_
+#ifndef _LUD_H_
+#define _LUD_H_
 
 struct Context;
 
