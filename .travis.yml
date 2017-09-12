@@ -1,5 +1,13 @@
 language:
         C
+sudo:
+        require
+addons:
+        packages:
+                cmake
 script:
+        mkdir build 
+        cd build
+        cmake ..
         make
 
