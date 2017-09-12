@@ -1,5 +1,7 @@
-# GLINT
+# LUD
 cmake_minimum_required(VERSION 2.8) 
+
+add_definitions(-std=gnu89)
 
 set(PATH_MINUIT_SRC ${CMAKE_SOURCE_DIR}/src/minuit)
 set(PATH_LUSTRE ${CMAKE_SOURCE_DIR}/src/lustre)
