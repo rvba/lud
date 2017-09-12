@@ -1,0 +1,9 @@
+git clone https://github.com/rvba/lud.git
+cd lud
+git submodule update --init --recursive
+git submodule foreach git checkout master
+git submodule foreach git pull 
+mkdir build
+cd build
+cmake ..
+make
