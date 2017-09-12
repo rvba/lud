@@ -51,13 +51,18 @@ add_executable(
     src/lud_init.c
 )
 
+target_link_libraries(lud liblustre)
+target_link_libraries(lud lua_mud)
+target_link_libraries(lud mudlib)
+target_link_libraries(lud stdutil)
+target_link_libraries(lud ${CMAKE_CURRENT_LIST_DIR}/src/mud/lune/luajit/src/libluajit.a)
+target_link_libraries(lud dl m)
+target_link_libraries(lud lua_util)
+
+find_package(Freetype REQUIRED)
+list(APPEND LINK_FLAGS ${FREETYPE_LIBRARIES})
 target_link_libraries(
 		lud
-		liblustre
-		lualib
-		lua_mud
-		mud_static
-		stdutil_static
 		blenlib
 		guardedalloc
 		minuit-ctx 
@@ -74,6 +79,7 @@ target_link_libraries(
 		minuit-base
 		dl #Lua
 		readline #Lua
+		umber
 		)
 
 
