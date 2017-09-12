@@ -1,4 +1,6 @@
-# Lud is a Lua 3D editor
+# Lud 
+
+Lud is a Lua 3D editor
 
 git clone https://github.com/rvba/lud.git
 cd lud
