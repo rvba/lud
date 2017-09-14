@@ -15,3 +15,5 @@ before_script:
 script:
         make
 
+notifications:
+        email: false
